@@ -3,9 +3,9 @@ import './BrochureDigital.css';
 import slidesHtml from './brochure-slides.html?raw';
 import mobileMapSrc from '@/assets/mapa-mobile-oliv.webp';
 
-const DESKTOP_IDS = ['s0', 's0b', 's1', 's2', 'sp1', 'sp2', 'sp3', 's3', 's4', 's5', 's5b', 's6', 's7', 's8', 's10', 's11', 's11b', 's12', 's13', 's14', 's15', 's15c', 's15b', 's15e', 's15d'];
-const DESKTOP_T = 25;
-const DESKTOP_PM: Record<number, number> = { 0: 0, 1: 0, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 2, 8: 3, 9: 3, 10: 3, 11: 4, 12: 4, 13: 5, 14: 5, 15: 5, 16: 5, 17: 5, 18: 6, 19: 6, 20: 7, 21: 7, 22: 7, 23: 7, 24: 7 };
+const DESKTOP_IDS = ['s0', 's0b', 's1', 'sproj', 'p1', 'pmix', 's15e', 'srec', 's3', 's4', 's5', 's5b', 's6', 's7', 's8', 's10', 's11', 's11b', 's12', 's13', 's15', 's15c', 's15b', 's15d'];
+const DESKTOP_T = 24;
+const DESKTOP_PM: Record<number, number> = { 0: 0, 1: 0, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1, 8: 2, 9: 3, 10: 3, 11: 3, 12: 4, 13: 4, 14: 5, 15: 5, 16: 5, 17: 5, 18: 5, 19: 5, 20: 6, 21: 6, 22: 7, 23: 7 };
 const SECTION_NAMES = ['Inicio', 'Urbanismo', 'Ubicación', 'Amenidades', 'Interiores', 'Planos', 'Inversión', 'Respaldo'];
 const FICHA_WL = new Set(['s10', 's11', 's12', 's13']);
 const CD: Record<string, number> = { B1: 320500000, A2: 485000000, R2: 493000000, R3: 697000000 };
@@ -14,12 +14,12 @@ const fmt = (n: number) => '$' + n.toLocaleString('es-CO');
 const NAV_SECTIONS = [
   { label: 'Inicio', idx: 0 },
   { label: 'Urbanismo', idx: 3 },
-  { label: 'Ubicación', idx: 7 },
-  { label: 'Amenidades', idx: 8 },
-  { label: 'Interiores', idx: 11 },
-  { label: 'Planos', idx: 13 },
-  { label: 'Inversión', idx: 19 },
-  { label: 'Respaldo', idx: 20 },
+  { label: 'Ubicación', idx: 8 },
+  { label: 'Amenidades', idx: 9 },
+  { label: 'Interiores', idx: 12 },
+  { label: 'Planos', idx: 14 },
+  { label: 'Inversión', idx: 20 },
+  { label: 'Respaldo', idx: 22 },
 ];
 
 export default function BrochureDigital() {
@@ -27,7 +27,7 @@ export default function BrochureDigital() {
   const gRef = useRef<(n: number) => void>(() => { });
   const curRef = useRef(0);
   // nav indices — updated by mobile IIFE with secFirst values
-  const navIndicesRef = useRef<number[]>([0, 3, 7, 8, 11, 13, 19, 20]);
+  const navIndicesRef = useRef<number[]>([0, 3, 8, 9, 12, 14, 20, 22]);
 
   useEffect(() => {
     const container = slidesRef.current;

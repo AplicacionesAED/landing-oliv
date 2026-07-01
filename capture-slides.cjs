@@ -6,13 +6,18 @@ const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 
-const URL = 'http://localhost:5174/brochure-digital?screenshots';
-const TOTAL_SLIDES = 22;
+const URL = 'http://localhost:5173/brochure-digital?screenshots';
+const TOTAL_SLIDES = 24;
 const OUT_DIR = path.join(__dirname, 'slides-capturas');
 const VIEWPORT = { width: 1920, height: 1080 };
 
 (async () => {
   fs.mkdirSync(OUT_DIR, { recursive: true });
+
+  // Limpiar capturas anteriores
+  for (const f of fs.readdirSync(OUT_DIR)) {
+    if (f.endsWith('.png')) fs.unlinkSync(path.join(OUT_DIR, f));
+  }
 
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();

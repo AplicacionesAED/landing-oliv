@@ -843,7 +843,7 @@
   }
 
   /* s5b mobile: tarjetas horizontales que llenan todo el espacio disponible */
-  .brochure-root #s5b .amenities-grid > div {
+  .brochure-root #s5b .amenities-grid>div {
     flex-direction: row !important;
     height: auto !important;
     min-height: 0 !important;
@@ -851,14 +851,14 @@
     overflow: hidden !important;
   }
 
-  .brochure-root #s5b .amenities-grid > div > div:first-child {
+  .brochure-root #s5b .amenities-grid>div>div:first-child {
     width: 38% !important;
     flex: none !important;
     height: 100% !important;
     min-height: 120px !important;
   }
 
-  .brochure-root #s5b .amenities-grid > div > div:first-child img {
+  .brochure-root #s5b .amenities-grid>div>div:first-child img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
@@ -866,15 +866,15 @@
     display: block !important;
   }
 
-  .brochure-root #s5b .amenities-grid > div > div:last-child {
+  .brochure-root #s5b .amenities-grid>div>div:last-child {
     flex: 1 !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
     padding: 0 16px !important;
-    background: rgba(20,20,16,.9) !important;
+    background: rgba(20, 20, 16, .9) !important;
     border-top: none !important;
-    border-left: 1px solid rgba(184,148,63,.15) !important;
+    border-left: 1px solid rgba(184, 148, 63, .15) !important;
   }
 
   .brochure-root .ficha-plan-slide [style*="width:54%"] {
@@ -1092,7 +1092,7 @@
   }
 
   .brochure-root #s8 [style*="width:52%"] [style*="linear-gradient"] {
-    background: linear-gradient(to bottom, transparent 40%, rgba(245,240,232,.93) 82%) !important;
+    background: linear-gradient(to bottom, transparent 40%, rgba(245, 240, 232, .93) 82%) !important;
   }
 
   .brochure-root #s8 [style*="width:51%"] {
@@ -1133,8 +1133,277 @@
   }
 }
 
+/* ── Desktop upscale ≥ 1440px ─────────────────────────────────────────────── */
+@media (min-width: 1440px) {
+
+  /* CSS class fonts ≈ ×1.35 */
+  .brochure-root .hero {
+    font-size: 76px;
+  }
+
+  .brochure-root .txl {
+    font-size: 58px;
+  }
+
+  .brochure-root .tlg {
+    font-size: 46px;
+  }
+
+  .brochure-root .tlg-dk {
+    font-size: 46px;
+  }
+
+  .brochure-root .bd {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .brochure-root .ey {
+    font-size: 14px;
+    letter-spacing: 4.5px;
+  }
+
+  .brochure-root .badge {
+    font-size: 14px;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .brochure-root .pill {
+    font-size: 13px;
+    padding: 7px 18px;
+  }
+
+  .brochure-root .gl- {
+    width: 56px;
+    margin: 14px 0;
+  }
+
+  /* Calculator */
+  .brochure-root .cr-v {
+    font-size: 27px;
+  }
+
+  .brochure-root .cr:last-child .cr-v {
+    font-size: 31px;
+  }
+
+  .brochure-root .cr-l {
+    font-size: 15px;
+  }
+
+  .brochure-root .csel {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+
+  /* Layout — ampliar padding horizontal, reducir exceso vertical donde hay fondo */
+  /* Paneles izquierda: más anchos (44% → 52%) para llenar más el espacio */
+  .brochure-root .cap-l {
+    padding: 80px 60px 80px 80px;
+    width: 52%;
+    max-width: none !important;
+  }
+
+  .brochure-root .cap-b {
+    padding: 44px 80px 100px;
+  }
+
+  /* Paneles derecha — centrado vertical, padding horizontal ampliado */
+  .brochure-root .ficha-right {
+    padding: 60px 70px 60px 80px !important;
+  }
+
+  /* s15 / s15c / s15d */
+  .brochure-root [style*="padding:72px 54px 72px 16px"] {
+    padding: 60px 65px 60px 80px !important;
+  }
+
+  /* s8 Torre LIVA */
+  .brochure-root [style*="padding:80px 60px 80px 16px"] {
+    padding: 60px 65px 60px 80px !important;
+  }
+
+  /* ── Inline font-size overrides (×1.33–1.40) ── */
+  /* disclaimer */
+  .brochure-root [style*="font-size:7.5px"] {
+    font-size: 10px !important;
+  }
+
+  /* tiny labels */
+  .brochure-root [style*="font-size:8px"] {
+    font-size: 11px !important;
+  }
+
+  .brochure-root [style*="font-size:8.5px"] {
+    font-size: 12px !important;
+  }
+
+  .brochure-root [style*="font-size:9px"] {
+    font-size: 12.5px !important;
+  }
+
+  .brochure-root [style*="font-size:9.5px"] {
+    font-size: 13px !important;
+  }
+
+  .brochure-root [style*="font-size:10px"] {
+    font-size: 14px !important;
+  }
+
+  .brochure-root [style*="font-size:10.5px"] {
+    font-size: 14.5px !important;
+  }
+
+  /* body text */
+  .brochure-root [style*="font-size:11px"] {
+    font-size: 15px !important;
+  }
+
+  .brochure-root [style*="font-size:11.5px"] {
+    font-size: 16px !important;
+  }
+
+  .brochure-root [style*="font-size:12px"] {
+    font-size: 16.5px !important;
+  }
+
+  .brochure-root [style*="font-size:12.5px"] {
+    font-size: 17px !important;
+  }
+
+  .brochure-root [style*="font-size:13px"] {
+    font-size: 18px !important;
+  }
+
+  .brochure-root [style*="font-size:13.5px"] {
+    font-size: 18.5px !important;
+  }
+
+  .brochure-root [style*="font-size:14px"] {
+    font-size: 19.5px !important;
+  }
+
+  .brochure-root [style*="font-size:14.5px"] {
+    font-size: 20px !important;
+  }
+
+  .brochure-root [style*="font-size:15px"] {
+    font-size: 21px !important;
+  }
+
+  .brochure-root [style*="font-size:16px"] {
+    font-size: 22px !important;
+  }
+
+  .brochure-root [style*="font-size:18px"] {
+    font-size: 25px !important;
+  }
+
+  /* display */
+  .brochure-root [style*="font-size:20px"] {
+    font-size: 27px !important;
+  }
+
+  .brochure-root [style*="font-size:22px"] {
+    font-size: 30px !important;
+  }
+
+  .brochure-root [style*="font-size:24px"] {
+    font-size: 32px !important;
+  }
+
+  .brochure-root [style*="font-size:26px"] {
+    font-size: 35px !important;
+  }
+
+  .brochure-root [style*="font-size:28px"] {
+    font-size: 38px !important;
+  }
+
+  .brochure-root [style*="font-size:32px"] {
+    font-size: 43px !important;
+  }
+
+  .brochure-root [style*="font-size:36px"] {
+    font-size: 49px !important;
+  }
+
+  .brochure-root [style*="font-size:38px"] {
+    font-size: 52px !important;
+  }
+
+  .brochure-root [style*="font-size:42px"] {
+    font-size: 57px !important;
+  }
+
+  .brochure-root [style*="font-size:44px"] {
+    font-size: 60px !important;
+  }
+
+  .brochure-root [style*="font-size:48px"] {
+    font-size: 65px !important;
+  }
+
+  .brochure-root [style*="font-size:72px"] {
+    font-size: 97px !important;
+  }
+
+  /* s5b — ampliar padding de la cabecera */
+  .brochure-root #s5b>div>div:first-child {
+    padding: 48px 70px 14px !important;
+  }
+
+  .brochure-root .amenities-grid {
+    padding: 0 70px 70px !important;
+    gap: 14px !important;
+  }
+
+  /* Planos info panel — más padding horizontal */
+  .brochure-root [style*="padding:56px 48px 56px 40px"] {
+    padding: 60px 60px 60px 50px !important;
+  }
+
+  /* s14 cotizador — ampliar padding */
+  .brochure-root #s14 [style*="padding:60px"] {
+    padding: 70px 80px !important;
+  }
+
+  .brochure-root #s14 [style*="padding:60px 60px 60px 24px"] {
+    padding: 70px 80px 70px 30px !important;
+  }
+
+  /* sp2 / sp3 — ampliar padding, centrado vertical */
+  .brochure-root [style*="padding:60px 54px 60px 40px"] {
+    padding: 70px 70px 70px 75px !important;
+  }
+
+  .brochure-root [style*="padding:60px 40px 60px 54px"] {
+    padding: 70px 75px 70px 70px !important;
+  }
+
+  /* sp3 — panel izquierda (ébano): 42% → 50%; imagen derecha 58% → 50% */
+  .brochure-root #sp3>div>div:first-child {
+    width: 50% !important;
+  }
+
+  .brochure-root #sp3>div>div:last-child {
+    width: 50% !important;
+  }
+
+  /* sp2 — imagen izquierda 58% → 50%; panel derecha (sangregado) 42% → 50% */
+  .brochure-root #sp2>div>div:first-child {
+    width: 50% !important;
+  }
+
+  .brochure-root #sp2>div>div:last-child {
+    width: 50% !important;
+  }
+}
+
 /* tablet: 769px – 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
+
   /* Planos s10/s11/s12/s13: reducir padding del panel de info (40% width) */
   .brochure-root [style*="padding:56px 48px 56px 40px"] {
     padding: 36px 20px 36px 20px !important;
@@ -1166,18 +1435,18 @@
     padding: 0 30px 16px !important;
   }
 
-  .brochure-root .amenities-grid > div:last-child {
+  .brochure-root .amenities-grid>div:last-child {
     grid-column: 1 / -1;
   }
 
   /* s5b: limitar alto de imagen para que las 3 tarjetas quepan */
-  .brochure-root #s5b .amenities-grid > div > div:first-child {
+  .brochure-root #s5b .amenities-grid>div>div:first-child {
     height: 170px !important;
     flex: none !important;
   }
 
   /* s5b: scroll por si acaso en tablets pequeñas */
-  .brochure-root #s5b > div {
+  .brochure-root #s5b>div {
     overflow-y: auto !important;
   }
 

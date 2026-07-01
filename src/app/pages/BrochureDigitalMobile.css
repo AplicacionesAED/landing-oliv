@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap');
+
+.brochure-mobile-root {
+  position: fixed; inset: 0; overflow: hidden;
+  font-family: 'Jost', sans-serif; background: #141410; color: #F5F0E8;
+  --ol:#2E3D1F;--oll:#5A7235;--cr:#F5F0E8;--cm:#EDE5D3;--gd:#B8943F;--gl:#D4AF6A;--wn:#6B1F2E;--wh:#fff;--dk:#141410;--tl:#7A7A65;
+}
+
+.brochure-mobile-root *{margin:0;padding:0;box-sizing:border-box;}
+.brochure-mobile-root nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;justify-content:space-between;align-items:center;padding:12px 32px;background:linear-gradient(to bottom,rgba(20,20,16,.96),transparent);}
+.brochure-mobile-root .nl{font-family:'Cormorant Garamond',serif;font-size:26.4px;font-weight:300;letter-spacing:6px;color:var(--wh);}
+.brochure-mobile-root .nl small{color:var(--gd);font-size:15.2px;letter-spacing:4px;display:block;}
+.brochure-mobile-root .np{display:flex;gap:3px;background:rgba(255,255,255,.05);padding:4px;border-radius:30px;border:1px solid rgba(184,148,63,.2);}
+.brochure-mobile-root .pl{padding:5px 11px;border-radius:20px;cursor:pointer;font-size:15.2px;letter-spacing:1.5px;font-weight:500;text-transform:uppercase;color:rgba(255,255,255,.4);border:none;background:none;transition:all .3s;}
+.brochure-mobile-root .pl.active{background:var(--gd);color:var(--ol);font-weight:600;}
+.brochure-mobile-root .sn{font-size:17px;letter-spacing:2px;color:rgba(255,255,255,.3);}
+.brochure-mobile-root .slides{width:100%;height:100vh;}
+.brochure-mobile-root .sl{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .5s;}
+.brochure-mobile-root .sl.active{opacity:1;pointer-events:all;}
+.brochure-mobile-root footer{position:fixed;bottom:0;left:0;right:0;z-index:200;display:flex;justify-content:center;align-items:center;gap:12px;padding:14px;background:linear-gradient(to top,rgba(20,20,16,.96),transparent);}
+.brochure-mobile-root .nb{width:34px;height:34px;border-radius:50%;border:1px solid rgba(184,148,63,.4);background:rgba(46,61,31,.6);color:var(--gd);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:22.1px;transition:all .3s;}
+.brochure-mobile-root .nb:hover{background:var(--gd);color:var(--ol);}
+.brochure-mobile-root .dots{display:flex;gap:5px;}
+.brochure-mobile-root .dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.18);cursor:pointer;transition:all .3s;}
+.brochure-mobile-root .dot.active{background:var(--gd);width:18px;border-radius:3px;}
+.brochure-mobile-root /* layout helpers */
+.fb{position:relative;overflow:hidden;width:100%;height:100vh;}
+.brochure-mobile-root .bg{position:absolute;inset:0;background-size:cover;background-position:center;}
+.brochure-mobile-root .ov-l{position:absolute;inset:0;background:linear-gradient(to right,rgba(20,20,16,.92) 0%,rgba(20,20,16,.65) 44%,transparent 70%);}
+.brochure-mobile-root .ov-ol{position:absolute;inset:0;background:linear-gradient(to right,rgba(46,61,31,.92) 0%,rgba(46,61,31,.65) 44%,transparent 70%);}
+.brochure-mobile-root .ov-b{position:absolute;bottom:0;left:0;right:0;height:38%;background:linear-gradient(to top,rgba(20,20,16,.97) 0%,rgba(20,20,16,.65) 55%,transparent 100%);}
+.brochure-mobile-root .cap-l{position:absolute;top:0;left:0;bottom:0;z-index:3;width:44%;display:flex;flex-direction:column;justify-content:center;padding:80px 44px 80px 60px;}
+.brochure-mobile-root .cap-b{position:absolute;bottom:0;left:0;right:0;z-index:3;padding:36px 60px 56px;}
+.brochure-mobile-root .pill{position:absolute;top:18px;left:24px;z-index:10;padding:5px 14px;border-radius:20px;font-size:15.3px;letter-spacing:2px;color:var(--gl);text-transform:uppercase;border:1px solid rgba(184,148,63,.3);background:rgba(20,20,16,.82);}
+.brochure-mobile-root .ey{font-size:15.3px;letter-spacing:4px;text-transform:uppercase;color:var(--gd);font-weight:500;margin-bottom:10px;}
+.brochure-mobile-root .hero{font-family:'Cormorant Garamond',serif;font-size:60.5px;font-weight:300;line-height:.92;color:var(--wh);}
+.brochure-mobile-root .txl{font-family:'Cormorant Garamond',serif;font-size:54.6px;font-weight:300;line-height:1.05;color:var(--wh);}
+.brochure-mobile-root .tlg{font-family:'Cormorant Garamond',serif;font-size:41.6px;font-weight:300;line-height:1.1;color:var(--wh);}
+.brochure-mobile-root .tlg-dk{font-family:'Cormorant Garamond',serif;font-size:41.6px;font-weight:300;line-height:1.1;color:var(--ol);}
+.brochure-mobile-root em{color:var(--gl);}
+.brochure-mobile-root .gl-{width:44px;height:1px;background:linear-gradient(to right,var(--gd),transparent);margin:12px 0;}
+.brochure-mobile-root .bd{font-size:19.6px;line-height:1.75;color:rgba(255,255,255,.62);font-weight:300;}
+.brochure-mobile-root .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid rgba(184,148,63,.3);border-radius:4px;font-size:16.1px;letter-spacing:2px;text-transform:uppercase;color:var(--gl);background:rgba(184,148,63,.06);}
+.brochure-mobile-root .srow{display:flex;gap:24px;}
+.brochure-mobile-root .sv{font-family:'Cormorant Garamond',serif;font-size:46.8px;font-weight:600;color:var(--gd);line-height:1;}
+.brochure-mobile-root .sl2{font-size:15.3px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:2px;}
+.brochure-mobile-root .di{display:flex;align-items:center;gap:8px;padding:7px 10px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);border-radius:4px;}
+.brochure-mobile-root .di-t{font-family:'Cormorant Garamond',serif;font-size:27.9px;font-weight:600;color:var(--gd);min-width:36px;}
+.brochure-mobile-root .di-l{font-size:16.1px;color:rgba(255,255,255,.65);line-height:1.3;font-weight:300;}
+.brochure-mobile-root .ficha{width:100%;height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;}
+.brochure-mobile-root .cr{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.05);}
+.brochure-mobile-root .cr:last-child{border:none;padding-top:10px;border-top:1px solid rgba(184,148,63,.25);}
+.brochure-mobile-root .cr-l{font-size:17.8px;color:rgba(255,255,255,.45);font-weight:300;}
+.brochure-mobile-root .cr-v{font-family:'Cormorant Garamond',serif;font-size:26.4px;font-weight:600;color:var(--cr);}
+.brochure-mobile-root .cr:last-child .cr-l{color:var(--gl);font-weight:500;}
+.brochure-mobile-root .cr:last-child .cr-v{color:var(--gd);font-size:31px;}
+.brochure-mobile-root .csel{padding:5px 11px;border-radius:12px;cursor:pointer;font-size:16.1px;font-weight:500;border:1px solid rgba(255,255,255,.1);background:none;color:rgba(255,255,255,.38);transition:all .3s;}
+.brochure-mobile-root .csel.active{background:var(--gd);color:var(--ol);border-color:var(--gd);}
+
+.brochure-mobile-root .sl.slide-from-right{animation:bmSlideR .38s ease forwards;}
+.brochure-mobile-root .sl.slide-from-left{animation:bmSlideL .38s ease forwards;}
+@keyframes bmSlideR{from{transform:translateX(24px);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes bmSlideL{from{transform:translateX(-24px);opacity:0}to{transform:translateX(0);opacity:1}}
+
+/* ocultar chrome en modo screenshots */
+.brochure-mobile-root.screenshot-mode nav, .brochure-mobile-root.screenshot-mode footer{display:none !important;}
+
+/* ── Lienzo escalado: el .slides se vuelve un canvas de 820px (width/height/transform
+      se fijan por JS) y todo lo que era 100vh pasa a 100% del canvas ── */
+.brochure-mobile-root .slides { position: relative; overflow: hidden; }
+.brochure-mobile-root .fb,
+.brochure-mobile-root .ficha,
+.brochure-mobile-root [style*="height:100vh"],
+.brochure-mobile-root [style*="height: 100vh"] { height: 100% !important; }
+
+/* nav/footer quedan fijos al viewport real (fuera del escalado) — ajuste fino en pantallas chicas */
+@media (max-width: 480px) {
+  .brochure-mobile-root nav { padding: 10px 16px; }
+  .brochure-mobile-root .nl { font-size: 20px; letter-spacing: 4px; }
+  .brochure-mobile-root .nl small { font-size: 11px; letter-spacing: 3px; }
+  .brochure-mobile-root .sn { font-size: 12px; }
+  .brochure-mobile-root footer { padding: 10px; gap: 10px; }
+  .brochure-mobile-root .nb { width: 30px; height: 30px; font-size: 18px; }
+}
