@@ -51,6 +51,7 @@ export default function BrochureDigitalMobile() {
     }
 
     gRef.current = g;
+    (window as any).gm = g;
     slides.forEach((s, i) => s.classList.toggle('active', i === 0));
     g(0);
 
@@ -93,6 +94,7 @@ export default function BrochureDigitalMobile() {
       document.removeEventListener('keydown', onKey);
       window.removeEventListener('resize', fit);
       window.removeEventListener('orientationchange', fit);
+      delete (window as any).gm;
       container.innerHTML = '';
     };
   }, []);
