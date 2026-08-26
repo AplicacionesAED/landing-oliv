@@ -10,7 +10,7 @@ const TOTAL_SLIDES = 26;
 const OUT_FILE = path.join(__dirname, 'Oliv Brochure Mobile.pdf');
 // Página tipo teléfono (puntos PDF). Se captura a 3x para nitidez.
 const W = 430, H = 932;
-const SCALE_SHOT = 3;
+const SCALE_SHOT = 2; // 2x = nítido en retina y mucho más ligero/fluido que 3x
 
 function sanitize(s) {
   return s
@@ -89,7 +89,7 @@ async function extractText(page) {
     await page.evaluate((n) => window.gm(n), i);
     await page.waitForTimeout(420);
 
-    const jpeg = await page.screenshot({ type: 'jpeg', quality: 90 });
+    const jpeg = await page.screenshot({ type: 'jpeg', quality: 82 });
     const textNodes = await extractText(page);
 
     const jpg = await merged.embedJpg(jpeg);

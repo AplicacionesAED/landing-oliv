@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import App from "./app/App.tsx";
 import BrochureDigital from "./app/pages/BrochureDigital.tsx";
 import BrochureDigitalMobile from "./app/pages/BrochureDigitalMobile.tsx";
+import BienvenidosOliv from "./app/pages/BienvenidosOliv.tsx";
 import "./styles/index.css";
 
 createRoot(document.getElementById("root")!).render(
@@ -12,6 +13,7 @@ createRoot(document.getElementById("root")!).render(
       <Route path="/politica-de-tratamiento-de-datos" element={<App />} />
       <Route path="/brochure-digital" element={<BrochureDigital />} />
       <Route path="/brochure-digital-mobile" element={<BrochureDigitalMobile />} />
+      <Route path="/bienvenidos-oliv-cartagena" element={<BienvenidosOliv />} />
     </Routes>
   </BrowserRouter>
 );
