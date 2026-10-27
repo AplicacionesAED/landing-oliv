@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, MapPin, Mail, Phone } from "lucide-react";
+import { Facebook, Instagram, MapPin } from "lucide-react";
 import logo from "@/assets/e70c42e76d8f373f7319be198453a0d6dc47133e.webp";
 import partnerLogo1 from "@/assets/fa520baa441a756a29cd264f5f51fa4873d109aa.webp";
 import partnerLogo2 from "@/assets/8bb56ae87febc8e3ae49068dcfc66b68b0c4b35a.webp";
@@ -25,15 +25,7 @@ export const Footer = () => {
             <h3 className="text-lg font-serif mb-2 text-[#ef8000]">Contacto</h3>
             <div className="flex items-start justify-center md:justify-start space-x-3 opacity-80 font-sans font-light text-sm w-full">
               <MapPin size={18} className="mt-1 flex-shrink-0" />
-              <span>Zona Norte, Km 14 Vía al Mar<br />Cartagena de Indias, Colombia</span>
-            </div>
-            <div className="flex items-center justify-center md:justify-start space-x-3 opacity-80 font-sans font-light text-sm w-full">
-              <Phone size={18} />
-              <span>+57 300 123 4567</span>
-            </div>
-            <div className="flex items-center justify-center md:justify-start space-x-3 opacity-80 font-sans font-light text-sm w-full">
-              <Mail size={18} />
-              <span>info@olivcartagena.com</span>
+              <span>Zona Norte, Km 12 Vía al Mar<br />Cartagena de Indias, Colombia</span>
             </div>
           </div>
 
@@ -41,9 +33,8 @@ export const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="text-lg font-serif mb-4 text-[#ef8000]">Síguenos</h3>
             <div className="flex justify-center md:justify-start space-x-6 w-full">
-              <a href="#" className="hover:text-[#ef8000] transition-colors"><Instagram size={24} /></a>
-              <a href="#" className="hover:text-[#ef8000] transition-colors"><Facebook size={24} /></a>
-              <a href="#" className="hover:text-[#ef8000] transition-colors"><Linkedin size={24} /></a>
+              <a href="https://www.instagram.com/olivcartagena/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-[#ef8000] transition-colors"><Instagram size={24} /></a>
+              <a href="https://www.facebook.com/p/OLIV-Cartagena-61584532835366/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-[#ef8000] transition-colors"><Facebook size={24} /></a>
             </div>
           </div>
         </div>
